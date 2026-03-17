@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b5fff" />
+    <title>RPSC 2nd Grade (Sanskrit) • Syllabus Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div class="topbar__row">
+          <div>
+            <h1 class="title">Syllabus Tracker</h1>
+            <p class="subtitle">RPSC 2nd Grade Teacher Exam (Sanskrit)</p>
+          </div>
+          <div class="actions">
+            <button id="btn-reset" class="btn btn--ghost" type="button" title="Reset progress">
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <section class="overall" aria-label="Overall progress">
+          <div class="overall__row">
+            <div>
+              <div class="label">Total Progress</div>
+              <div id="overall-meta" class="meta">0% • 0/0 topics</div>
+            </div>
+            <div id="overall-percent" class="percent">0%</div>
+          </div>
+          <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div id="overall-bar" class="bar__fill" style="width: 0%"></div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="install" id="install-card" hidden>
+        <div class="install__row">
+          <div>
+            <div class="install__title">Add to Home Screen</div>
+            <div id="install-help" class="install__help">
+              Install this app for quick access.
+            </div>
+          </div>
+          <button id="btn-install" class="btn" type="button">Install</button>
+        </div>
+      </section>
+
+      <div id="app" class="app" aria-live="polite"></div>
+
+      <footer class="footer">
+        <small>
+          Tip: Your progress is saved automatically (localStorage).
+        </small>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
